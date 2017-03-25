@@ -1,9 +1,9 @@
-#PocketSphinx.js
+#pocketsphinx.js
 Speech Recognition in JavaScript
 
 PocketSphinx.js is a speech recognizer that runs entirely in the web browser. It is built on:
 
-    a speech recognizer written in C (PocketSphinx) converted into JavaScript using Emscripten,
+   a speech recognizer written in C (PocketSphinx) converted into JavaScript using Emscripten,
     an audio recorder using the web audio API. The audio recorder can be used independently to build other kinds of audio-related web applications. There is a more detailed documentation in doc/AudioRecorder/README.md.
 
 You can try it on the project page: https://syl22-00.github.io/pocketsphinx.js and have a look at our FAQ.
