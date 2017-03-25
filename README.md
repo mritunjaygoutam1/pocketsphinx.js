@@ -1,5 +1,4 @@
-README.md
-PocketSphinx.js
+#PocketSphinx.js
 Speech Recognition in JavaScript
 
 PocketSphinx.js is a speech recognizer that runs entirely in the web browser. It is built on:
@@ -21,7 +20,7 @@ Table of contents:
     Notes about speech recognition and performance
     License
 
-1. Overview
+#1. Overview
 
 This project includes several components that can be used independently:
 
