@@ -115,10 +115,10 @@ For the dictionary and statistical language model, just ignore them when running
 
 To generate the JavaScript files that contain these files, use emscripten's` tools/file_packager.py` utility. For instance, to package the hub4 acoustic model provided with pocketsphinx on cmusphinx's subversion repository:
 
-# cd .../cmusphinx/models/hmm/en_us
-# python .../emscripten/tools/file_packager.py .../pocketsphinx.js/build/pocketsphinx.js --embed hub4wsj_sc_8k/mdef --js-output=mdef.js
-# python .../emscripten/tools/file_packager.py .../pocketsphinx.js/build/pocketsphinx.js --embed hub4wsj_sc_8k/variances --js-output=variances.js
-... and so on
+    # cd .../cmusphinx/models/hmm/en_us
+    # python .../emscripten/tools/file_packager.py .../pocketsphinx.js/build/pocketsphinx.js --embed hub4wsj_sc_8k/mdef --js-output=mdef.js
+    # python .../emscripten/tools/file_packager.py .../pocketsphinx.js/build/pocketsphinx.js --embed hub4wsj_sc_8k/variances --js-output=variances.js
+    ... and so on
 
 Then, make sure you load all these generated JavaScript files (`mdef.js, variances.js`, etc.) before you load `pocketsphinx.js`.
 # 3. API of pocketsphinx.js
