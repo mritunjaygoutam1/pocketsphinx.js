@@ -120,8 +120,8 @@ To generate the JavaScript files that contain these files, use emscripten's` too
 # python .../emscripten/tools/file_packager.py .../pocketsphinx.js/build/pocketsphinx.js --embed hub4wsj_sc_8k/variances --js-output=variances.js
 ... and so on
 
-Then, make sure you load all these generated JavaScript files (mdef.js, variances.js, etc.) before you load pocketsphinx.js.
-3. API of pocketsphinx.js
+Then, make sure you load all these generated JavaScript files (`mdef.js, variances.js`, etc.) before you load `pocketsphinx.js`.
+# 3. API of pocketsphinx.js
 
 You can interact with pocketsphinx.js directly if you need to, but it is probably easier to build your application against the API of recognizer.js described in a later section.
 3.1 Principles
@@ -675,7 +675,7 @@ We include an audio recording library based on the Web Audio API that accesses t
 
 Include `audioRecorder.js` in the HTML file and make sure `audioRecorderWorker.js` is in the same folder. To use it, create a new instance of `AudioRecorder` giving it as argument a `MediaStreamSource`. As of Today, the Google Chrome and Firefox (25+) implement it. You also need to set the recognizer attribute to a Recognizer worker, as described above.
 
-```javascript
+``javascript
 // Deal with prefixed APIs
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
 navigator.getUserMedia = navigator.getUserMedia ||
@@ -707,6 +707,7 @@ if (navigator.getUserMedia)
                             });
 else console.log("No web audio support in this browser");
 ```
+
 
 Once the recorder is up and running, you can start and stop recording and recognition with:
 
@@ -778,3 +779,5 @@ Copyright © 2013-2016 Sylvain Chevalier
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
